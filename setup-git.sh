@@ -3,13 +3,13 @@
 # Variables
 
 # Prompt for user's real name and email
-read -p "Enter your Git real name: " GIT_NAME
+read -p "Enter your Git real name: " GIT_USERNAME
 read -p "Enter your Git email: " GIT_EMAIL
 
 # Get the current system username
-GIT_USERNAME=$(whoami)
+#GIT_USERNAME=$(whoami)
 
-REPO_NAME="orion-public"
+REPO_NAME="orion"
 REPO_HOST="github.com"  # Change this to your Git server's host
 REPO_URL="git@${REPO_HOST}:${GIT_USERNAME}/${REPO_NAME}.git"
 SSH_KEY_PATH="$HOME/.ssh/id_rsa"  # Change this path if you use a different key
